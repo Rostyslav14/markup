@@ -1,0 +1,72 @@
+.services{
+
+    &__container{
+        margin-top:145px;
+        margin-bottom:175px;
+        
+    }
+
+    &__text-wrapper{
+        @include flex-CenterAlign;
+        text-align:center;
+    
+    }
+
+    &__header{
+        line-height:1.2;
+        font-size:50px;
+        text-transform: capitalize;
+    }
+
+    &__content-wrapper{
+        margin-top:200px;
+        @include flex-space-between;
+        gap:15px;
+    }
+    &__images-wrapper{
+        display:flex;
+        flex-direction: column;
+        gap:7px;
+    }
+    &__img-wrapper{
+        max-width:95px;
+        max-height:95px;
+        background-color:rgb(251,251,251);
+    }
+    &__img-wrapper:first-child{
+        box-shadow: 0px 0px 18px 0px lightgrey;
+    }
+    &__img{
+        max-width:75px;
+        max-height:80px;
+        margin:10px 0px 0px 10px;
+    }
+
+    &__description-wrapper{
+        max-width:505px;
+    }
+    &__description-header{
+        font-size:30px;
+        line-height:1.2;
+        text-transform:capitalize;
+    }
+    &__decoration-line{
+        max-width:100px;
+        min-height:2px;
+        background-color: $color-accent;
+        margin:15px 0px;
+    }
+
+    &__description-text2{
+        margin:40px 0px 30px;
+    }
+
+    &__button{
+        margin:40px 0px 0px;
+
+    }
+    &__apple-img{
+        max-width:305px;
+       
+    }
+}

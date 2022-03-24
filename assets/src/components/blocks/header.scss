@@ -1,0 +1,39 @@
+
+.header{
+    left:0;
+    right:0;
+    top:0;
+    position:fixed;
+    background-color:transparent;
+    z-index: 100;
+
+    &__container{
+        display:flex;
+        justify-content:space-between;
+        padding-top:85px;
+    }
+
+    &__logo-wrapper{
+        padding:4px 6px;
+        border: 2px solid rgb(112,107,115);
+    }
+    
+    &__logo{
+        line-height:1.2;
+        font-size:38px;
+        font-weight:bold;
+    }
+
+    &__cap-letter{
+        color:$color-accent;
+    }
+    
+    &__menu-line{
+        height:4px;
+        width:30px;
+        background-color:rgb(112,107,115)
+    }
+    &__menu-line:not(:first-child){
+        margin-top:4px;
+    }
+}

@@ -1,0 +1,52 @@
+.footer{
+    background-color:$sectionbg-grey;
+    
+    &__container{
+        padding-top:48px;
+        padding-bottom:48px;
+
+        @include flex-CenterAlign;
+    }
+
+    &__button{
+        margin-bottom:45px;
+        background-color: #fff;
+        text-transform:capitalize;
+        color:#000;
+        padding:12px 74px;
+        border-radius:2rem 2rem;
+    }
+
+    &__button:hover{
+        background-color:$color-accent;
+
+    }
+    
+    &__items-wrapper{
+        display:flex;
+
+    }
+    &__item{
+        background-color:grey;
+        border-radius: 50%;
+        min-width:50px;
+        min-height:50px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    &__item:hover{
+        background-color:$color-accent;
+    }
+
+    &__item:not(:first-child){
+        margin-left:15px;
+    }
+
+    &__text{
+        margin:1rem 0rem 0rem 1rem;
+        font-size:17px;
+    }
+
+    
+}

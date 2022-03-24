@@ -1,0 +1,34 @@
+@import "../components/variables.scss";
+@import "../components/mixin.scss";
+@import "../components/blocks/header.scss";
+@import "../components/blocks/first-screen.scss";
+@import "../components/blocks/footer.scss";
+@import "../components/blocks/working.scss";
+@import "../components/blocks/slider.scss";
+@import "../components/blocks/feat-works.scss";
+@import "../components/blocks/logo.scss";
+@import "../components/blocks/services.scss";
+@import "../components/blocks/team.scss";
+
+
+.body{
+    font-family: 'Open Sans', sans-serif;
+}
+.text-accent{
+    color:$color-accent;
+}
+.container{
+    margin:0 auto;
+    max-width:1160px;
+    padding-right:15px;
+    padding-left:15px;
+}
+.section-description{
+    color:$color-text-grey;
+    max-width:630px;
+    margin-top:1.5em;
+    font-size:16px;
+    line-height:1.2;
+
+}
+

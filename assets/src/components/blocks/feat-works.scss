@@ -1,0 +1,40 @@
+.feat-works{
+
+    &__container{
+        padding-top:130px;
+        padding-bottom:165px;
+    }
+    &__text-wrapper{
+        text-align:center;
+        @include flex-CenterAlign;
+    }
+
+    &__header{
+        font-size:50px;
+        line-height:1.2;
+        text-transform:capitalize;
+    }
+
+    &__img-wrapper{
+        margin-top:115px;
+        display:flex;
+        flex-wrap:wrap;
+        gap:25px;
+
+       @media (max-width: $xl-min){
+           gap:15px;
+           justify-content:center;
+       }
+    }
+
+    &__img{
+        max-width:360px;
+        max-height:360px;
+
+        @media (max-width: $xl-min){
+            max-width:300px;
+            max-height:300px;
+        }
+    }
+
+}
