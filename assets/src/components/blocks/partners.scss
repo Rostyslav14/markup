@@ -1,0 +1,78 @@
+.partners{
+    &__container{
+        text-align:center;
+    }
+    &__header{
+        margin:30px 0px;
+        font-size:14px;
+        text-transform: uppercase;
+        color:$color-main;
+    }
+    &__logo-wrapper{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        
+
+
+    }
+
+    &__logo{
+        min-height:120px;
+        min-width:188px;
+        max-width:25%;
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    &__logo-img{
+        @media(max-width:$mid-max){
+            max-width:85%;
+            min-height:90px
+        }
+    }
+}
+.partner{
+
+    &-hilel{
+        background-color:#1C4280;
+        
+    }
+    &-wannabiz{
+        background-color: #143646 ;
+    }
+    &-tapgerine{
+        background-color: #F48B30;
+        ;
+    }
+    &-3dlook{
+        background-color: #9E4DC3;
+    }
+    &-orangear{
+        background-color: #F48B30;
+        ;
+    }
+    &-adtelligent{
+        background-color: #E2E2E4;
+    }
+    &-clickky{
+        background-color: #C71C36;
+    }
+    &-ecolising{
+        background-color:#DCF3F9 ;
+    }
+    &-infratek{
+        background-color:#EAEAEA ;
+    }
+    &-citypark{
+        background-color:#282240 ;
+    }
+    &-artprint{
+        background-color:#1D4568 ;
+    }
+    &-ultimate{
+        background-color: #000000;
+    }
+
+}

@@ -1,0 +1,109 @@
+.publications-page{
+    background-color:$bg-grey;
+
+    &__container{
+        padding-top:175px;
+        display:flex;
+        flex-direction:column;
+        position:relative;
+    }
+
+    &__btn-wrapper{ 
+        margin:40px auto 40px;
+        background-color:$separator-grey;
+        border-radius:12px;
+        padding:3px;
+
+    }
+    &__button{
+        background-color:none;
+        color:$color-main;
+        border-radius:8px;
+        border:none;
+        width:127px;
+        height:36px;
+        font-size:18px;
+            &:active{
+                background-color:#fff;
+            }
+            &:focus{
+                background-color:#fff;
+            }
+
+    }
+
+    &__items-wrapper{
+        display:grid;
+        
+        grid-template-columns: repeat(3,32%);
+        gap:40px;
+        @media(max-width:$xl-min){
+            gap:20px;
+        }
+        @media(max-width:$sm-max){
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            height:1648px;
+            overflow:hidden;
+        }
+    }
+    &__item{
+        max-width:413px;
+        background-color:#fff;
+        border-radius:0.5rem;
+        height:max-content;
+        @media (max-width:$xl-mid){
+                max-width:335px;
+        }
+
+    }
+    &__col{
+        display:flex;
+        flex-direction:column;
+        gap:40px;
+            @media(max-width:$xl-min){
+                gap:20px;
+            }
+    }
+    &__img{
+        width:100%;
+        // @media (max-width:$xl-mid){
+        //     max-width:335px;
+        // }
+    }
+    &__text-wrapper{
+        padding:20px;
+    }
+    &__item-header-wrapper{
+        text-decoration-line:none;
+    }
+    
+    &__item-header{
+        font-size:18px;
+        color:$color-active;
+        line-height:1.2;
+
+            &:hover{
+            color:$accent-red;
+        }
+    }
+    &__date{
+        margin:10px 0px 20px;
+        padding-bottom:20px;
+        border-bottom: 4px solid $separator-grey;
+        color:$text-grey;
+            @media (max-width:$mid-min){
+                border:none;
+                padding:0;
+                margin:10px 0px 0px;
+            }
+    }
+    &__item-description{
+        line-height:1.3;
+        @media (max-width:$mid-min){
+            display:none;
+            
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.team-card{
+    &__container{
+        display:flex;
+        justify-content:center;
+        gap:40px;
+        padding-top:195px;
+        padding-bottom:80px;
+            @media (max-width:$mid-min){
+                padding-bottom:40px;
+            }
+            @media (max-width:$mid-min){
+                flex-direction:column;
+                gap:20px;
+            }
+    }
+    &__text-wrapper{
+        display:flex;
+        flex-direction:column;
+        max-width:640px;
+        @media (max-width:$mid-min){
+            text-align:center;
+        }
+        @media (max-width:$sm-mid){
+            text-align: unset;
+            }
+        
+    }
+    &__header{
+        @include text-gradient;
+        font-size:42px;
+        font-weight:700;
+        line-height:1.2;
+        margin:20px 0px 10px;
+        @media(max-width:$xl-min){
+            margin:0px 0px 10px;
+        }
+        @media (max-width:$mid-min){
+            font-size:32px;
+        }
+        
+    }
+    &__links-wrapper{
+        display:flex;
+        gap:26px;
+        padding-bottom:20px;
+        border-bottom:4px solid $separator-grey;
+        margin-bottom:40px;
+        flex-wrap:wrap;
+        @media(max-width:$xl-min){
+            gap:15px;
+        }
+        @media (max-width:$mid-min){
+            gap:10px;
+            flex-direction:column;
+                
+        }
+        
+    }
+    &__post{
+        line-height:1.3;
+        color:$text-grey;
+    }
+    &__img{
+        @media (max-width:$sm-mid){
+            max-width:335px;
+        }
+        
+    }
+    &__img-wrapper{
+        @media (max-width:$mid-min){
+            align-self:center;
+        }
+
+    }
+    &__email{
+        text-decoration-line:none;
+        line-height:1.3;
+        color:$color-active;
+        position:relative;
+        &:hover{
+            color:$accent-red;
+        }
+        &::before{
+            position:absolute;
+            content:'';
+            background-image:url('../images/before-afterGrey.png');
+            left:-12px;
+            top:7px;
+            height:6px;
+            width:6px;
+                @media (max-width:$mid-min){
+                    display:none;
+                }
+        }
+        &::after{
+            position:absolute;
+            content:'';
+            background-image:url('../images/before-afterGrey.png');
+            right:-13px;
+            top:7px;
+            height:6px;
+            width:6px;
+            @media (max-width:$mid-min){
+                display:none;
+            }
+        }
+    }
+    &__linkedin{
+        text-decoration-line:none;
+        line-height:1.3;
+        color:$color-active;
+        &:hover{
+            color:$accent-red;
+        }
+    }
+    &__text{
+        font-size:18px;
+        line-height:1.3;
+    }
+    &__text:nth-child(4){
+        margin-top:20px;
+    }
+    &__text-header{
+        margin:40px 0px 10px;
+        color:$color-main;
+        font-size:14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        @media(max-width:$xl-min){
+            margin:20px 0px 10px;
+        }
+    }
+}

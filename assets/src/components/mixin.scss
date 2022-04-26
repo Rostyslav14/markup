@@ -8,3 +8,39 @@
     display:flex;
     justify-content:space-between;
 }
+@mixin flex-center-align{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin blue-button{
+    background-color:$color-active;
+    max-width:250px;
+    width:100%;
+    min-height:50px;
+    text-decoration-line:none;
+    color:#fff;
+    border-radius:12px;
+    font-size:14px;
+    box-shadow: 0px 0px 20px 0px $color-active;
+    &:hover{
+        background-color:$color-active-hover;
+        box-shadow: 0px 0px 20px 0px $color-active-hover;
+    }
+    &:focus{
+        background-color:$color-active-active;
+        box-shadow:none;
+    }
+
+    
+}
+@mixin text-gradient{
+    color: #f0145a;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: border-box;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}

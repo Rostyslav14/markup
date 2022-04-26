@@ -1,0 +1,114 @@
+.contacts-p{
+    
+
+    &__container{
+        display:flex;
+        justify-content:center;
+        padding: 190px 110px 80px;
+        gap:150px;
+        @media (max-width:$xl-min) {
+            gap:80px;
+            
+        }
+        @media(max-width:$mid-min){
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+    }
+
+    &__text-wrapper{
+        
+        max-height:300px;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-self:center;
+        max-width: 412px;
+        width:100%;
+        
+        
+    }
+
+    &__text{
+        font-size:21px;
+        line-height:1.2;
+        color:$color-main;
+       
+    }
+    
+    &__adress {
+        border-bottom:4px #E6E6F0 solid ;
+        margin-bottom:40px;
+        padding-bottom:20px;
+        
+    }
+    &__email{
+        border-bottom:#E6E6F0 solid 4px;
+        margin:20px 0px;
+        padding-bottom:40px;
+        
+
+    }
+    
+    &__facebook-logo:hover{
+        fill:$accent-red;
+    }
+
+    &__form{
+        
+        background-color:#F5F5FA;
+        padding:20px;
+        border-radius:1rem;
+        max-width:487px;
+        width:100%;
+
+
+    }
+    &__form form{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+        
+    }
+    &__form label{
+        color:$text-grey;
+        align-self:flex-start;
+        text-transform:uppercase;
+    }
+    
+    &__header{
+        font-size:32px;
+        line-height:1.3;
+        @include text-gradient;
+        margin-bottom:20px;
+    }
+    &__input{
+        border:none;
+        padding:10px;
+        border-radius: 0.5rem;
+        color:$text-grey;
+        
+        &:focus{
+            outline:$accent-red 2px solid;
+        }
+    }
+    &__textarea{
+        border:none;
+        padding:10px;
+        border-radius: 0.5rem;
+        color:$text-grey;
+        min-height:180px;
+        resize:none;
+        &:focus{
+            outline:$accent-red 2px solid;
+        }
+    }
+    &__button{
+        @include blue-button;
+        @include flex-center-align;
+        align-self:center;
+    }
+}

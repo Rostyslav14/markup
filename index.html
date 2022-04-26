@@ -6,328 +6,510 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/src/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/src/style.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
-            <div class="header__logo-wrapper">
-                <div class="header__logo"><span class="header__cap-letter">S</span>mart</div>
+
+            <div class="header__logo-special-wrapper">
+                <div class="header__logo-wrapper">
+                    <img src="./assets/images/logo.png" alt="Hlegals" class="header__logo header__logo-max">
+                    <img src="./assets/images/Logo Min (1).svg" alt="Hlegals" class="header__logo-mini header__logo">
+                </div>
+                
+                <div class="burger-wrapper">
+                    <a href="#mobile-menu" id="click" class="burger-menu">
+                        <span class="color-white burger-line"></span>
+                        <span class="color-white burger-line"></span>
+                        <span class="color-white burger-line"></span>
+                    </a>
+                </div>
+                
+                <div id="mobile-menu" class="mobile-menu__wrapper">
+                    <div class="mobile-menu__close">
+                        <a class="mobile-menu__close" href="#">&times;</a>
+                    </div>
+                    <ul class="mobile-menu__nav">
+                        <li class="mobile-menu__item">
+                            <a href="./assets/pages/about.html" class="mobile-menu__link">о нас</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="./assets/pages/services.html" class="mobile-menu__link">послуги</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="./assets/pages/team.html" class="mobile-menu__link">команда</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="./assets/pages/publications-page.html" class="mobile-menu__link">публікації</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="./assets/pages/contacts.html" class="mobile-menu__link">контакти</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div class="header__menu-wrapper">
-                <div class="header__menu-line"></div>
-                <div class="header__menu-line"></div>
-                <div class="header__menu-line"></div>
+            <div class="header__contacts-block">
+                <div class="header__contacts-wrapper">
 
+                    <div class="header__language">
+                        <button class="header__language-item header__language-item__hover">ук</button>
+                        <button class="header__language-item header__language-item__hover">ру</button>
+                        <button class="header__language-item header__language-item__hover">en</button>
+                    </div>
+
+                    <div class="header__adress">Одеса, Адміральський пр., 3</div>
+                    <div class="header__telephone-number">	+38 (050) 390 15 91 </div>
+                    <a href="#" class="header__facebook-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="header__facebook-logo" d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z" fill="white"/>
+                            </svg>
+                    </a>
+                </div>
+
+                    <nav class="header__nav">
+                        <a href="./assets/pages/about.html" class="header__link">о нас</a>
+                        <a href="./assets/pages/services.html" class="header__link">послуги</a>
+                        <a href="./assets/pages/team.html" class="header__link">команди</a>
+                        <a href="./assets/pages/publications-page.html" class="header__link">публікації</a>
+                        <a href="./assets/pages/contacts.html" class="header__link">контакти </a>
+                    </nav>
+
+                    
+                    
+
+                    
+               
             </div>
+
         </div>
     </header>
     <section class="first-screen">
         <div class="container first-screen__container">
-            <div class="first-screen__text-wrapper">
-                <h2 class="first-screen__header"><span class="header__cap-letter">smart</span> agency landign page</h2>
-                <div class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates        doloremque rerum aspernatur dolorum at!</div>
-            </div>
-            <div class="contact-form__wrapper">
-                <form action="#" class="contact-form">
-                    <h3 class="contact-form__header"><span class ="text-accent">Send</span> A Message</h3>
-                    <input class="contact-form__item" type="text" placeholder="Name" minlength="2" maxlength="15">
-                    <input class="contact-form__item" type="email" placeholder="Email" minlenght="6" maxlength="20">
-                    <textarea class="contact-form__item" name="SendMess" id="" placeholder="Your Message"></textarea>
-                    <button type="button" class="mx-2 btn btn-primary footer__button contact-form__button contact-form__button_custom" data-bs-toggle="button" autocomplete="off">send message</button>
-
-                </form>
-            </div>
+            <h1 class="first-screen__header">системний адміністратор правових рішень</h1>
         </div>
+
+            <a href="#" class="first-screen__scroll-wrapper">
+                <div class="first-screen__scroll"></div>
+            </a>
+        
     </section>
-    <section class="working">
-        <div class="working__container container">
-
-            <div class="working__text-wrapper">
-                <h2 class="working__header"><span class="text-accent">working</span> process</h2>
-                <div class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam accusantium in esse alias.</div>
-            </div>
-
-            <div class="working__cards-wrapper">
-
-                <div class="working__card working__card-first card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <div class="working__img-wrapper">
-                            <img src="./assets/images/1card-img.png" alt="Magnet" class="card__img">
-                        </div>
-                    <h5 class="working__card-title card-title">kok koi tomi</h5>
-                    <p class="working__card-text card-text">Lorem ipsum is dummy lorem very dummy</p>
-                    <a href="#" class="working__btn working__btn_custom btn btn-primary">Know More</a>
-                    </div>
-                </div>
-
-
-                <div class=" working__card working__card-second card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                    <div class="working__img-wrapper">
-                        <img src="./assets/images/2card-img.png" alt="Beetle" class="card__img">
-                    </div>
-                    <h5 class="working__card-title card-title">koimona set</h5>
-                    <p class="working__card-text card-text">Lorem ipsum is dummy you lorem very dumyL is</p>
-                    <a href="#" class="working__btn working__btn_custom btn btn-primary">Know More</a>
-                    </div>
-                </div>
-
-
-                <div class="working__card working__card-third card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <div class="working__img-wrapper">
-                            <img src="./assets/images/3card-img.png" alt="Settings" class="card__img">
-                        </div>
-                    <h5 class="working__card-title card-title">setting koire</h5>
-                    <p class="working__card-text card-text">Lorem ipsum is dummy lorem very yLorem ipsus</p>
-                    <a href="#" class="working__btn btn working__btn_custom btn-primary">Know More</a>
-                    </div>
-                </div>
-
-
-                <div class="working__card working__card-fourth card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <div class="woking__img-wrapper">
-                            <img src="./assets/images/4card-img.png" alt="Camera" class="card__img">
-                        </div>
-                    <h5 class="working__card-title card-title">ko image lara</h5>
-                    <p class="working__card-text card-text">Lorem ipsum is dummy ry dumyLorem ipsum is</p>
-                    <a href="#" class="working__btn working__btn_custom btn btn-primary">Know More</a>
-                    </div>
-                </div>
-                
-  
-
-            </div>
-
-        </div>
-    </section>
-    <section class="feat-works">
-        <div class="container feat-works__container">
-            <div class="feat-works__text-wrapper">
-                <h2 class="feat-works__header"><span class="text-accent">Featured </span>Works</h2>
-                <div class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, eligendi!</div>
-
-                <div class="feat-works__img-wrapper">
-                    <img src="./assets/images/orange-color.png" alt="Orange" class="feat-works__img">
-                    <img src="./assets/images/orange-color.png" alt="Orange" class="feat-works__img">
-                    <img src="./assets/images/orange-color.png" alt="Orange" class="feat-works__img">
-                    <img src="./assets/images/orange-color.png" alt="Orange" class="feat-works__img">
-                    <img src="./assets/images/orange-color.png" alt="Orange"class="feat-works__img">
-                    <img src="./assets/images/orange-color.png" alt="Orange"class="feat-works__img">
-                    <img src="./assets/images/orange-color.png" alt="Orange" class="feat-works__img">
-                    <img src="./assets/images/orange-color.png" alt="Orange" class="feat-works__img">
-                    <img src="./assets/images/orange-color.png" alt="Orange" class="feat-works__img">
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    
     <section class="services">
+        <div class="experince">
+            <div class="container">
+                <div class="experience__line">
+                    <ul class="nav nav-tabs experience__header-wrapper">
+                        <li class="nav-item"><a href="#expDescrip1" data-bs-toggle="tab" class= " experience__header nav-link active">Послідовні</a></li>
+                        <li class="nav-item"><a href="#expDescrip2" data-bs-toggle="tab" class=" experience__header nav-link">Клієнтоорієнтовані</a></li>
+                        <li class="nav-item"><a href="#expDescrip3" data-bs-toggle="tab" class=" experience__header nav-link">Інноваційні</a></li>
+                        <li class="nav-item"><a href="#expDescrip4" data-bs-toggle="tab" class="experience__header nav-link">Бізнес-орієнтовані юристи</a></li>
+                    </ul>
+                    <div class="tab-content experience__description-wrapper">
+                        <div id="expDescrip1" class="tab-pane experience__description-item active">
+                            <h3 class="experience__description-label">Послідовні</h3>
+                            <h4 class="experience__description-header">Перевертаємо уявлення про юридичні послуги</h4>
+                            <div class="experience__description">Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</div>
+                        </div>
+                        <div id="expDescrip2" class="tab-pane experience__description-item">
+                            <h3 class="experience__description-label">Клієнтоорієнтовані</h3>
+                            <h4 class="experience__description-header">2Перевертаємо уявлення про юридичні послуги</h4>
+                            <div class="experience__description">2Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</div>
+                        </div>
+                        <div id="expDescrip3" class="tab-pane experience__description-item">
+                            <h3 class="experience__description-label">Інноваційні</h3>
+                            <h4 class="experience__description-header">3Перевертаємо уявлення про юридичні послуги</h4>
+                            <div class="experience__description">3Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</div>
+                        </div>
+                        <div id="expDescrip4" class="tab-pane experience__description-item">
+                            <h3 class="experience__description-label">Бізнес-орієнтовані юристи</h3>
+                            <h4 class="experience__description-header">4Перевертаємо уявлення про юридичні послуги</h4>
+                            <div class="experience__description">4Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container services__container">
-            <div class="services__text-wrapper">
-                <h2 class="services__header"><span class="text-accent">services </span>we provide</h2>
-                <div class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, eum?</div>
-            </div>
-
-                <div class="services__content-wrapper">
-
-                    <div class="services__images-wrapper">
-
-                        <div class="services__img-wrapper">
-                            <img src="./assets/images/services1.png" alt="statistic" class="services__img">
+            <a href="#" class="services__link">ПОСЛУГИ</a>
+            <h2 class="services__header">Що ми вміємо робити краще за інших?</h2>
+            <div class="services__desk-wrapper">
+                <div class="services__item">
+                    <div class="services__logo-header-wrapper">
+                        <div class="services__logo-wrapper">
+                            <img src="./assets/images/services/iconfinder_shopping-purse_353439.svg" alt="Services" class="services__logo">
                         </div>
-
-                        <div class="services__img-wrapper">
-                            <img src="./assets/images/services2.png" alt="statistic" class="services__img">
-                        </div>
-
-                        <div class="services__img-wrapper">
-                            <img src="./assets/images/services3.png" alt="statistic" class="services__img">
-                        </div>
-
-                        <div class="services__img-wrapper">
-                            <img src="./assets/images/services4.png" alt="statistic" class="services__img">
-                        </div>
-
+                    <h3 class="services__item-header">IT та електронна комерція</h3>
                     </div>
-
-                
-
-                <div class="services__description-wrapper">
-                    <h3 class="services__description-header">modern app design</h3>
-                    <div class="services__decoration-line"></div>
-                    <div class="services__description-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat deleniti suscipit nulla ex corrupti facere, sunt, vel quaerat laudantium expedita eius. Vitae magni incidunt non excepturi natus mollitia sit?</div>
-                    <div class="services__description-text services__description-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rem eum, facere quam laudantium error.</div>
-                    <div class="services__description-text">lorem ipsum dolor sit amet.</div>
-                    <a href="#" class="services__button working__btn btn btn-primary working__btn_custom">Know More</a>
+                    <div class="services__item-description">Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста. </div>
                 </div>
 
-                <div class="services__apple-img-wrapper">
-                    <img src="./assets/images/apple-watch-mockup.png" alt="AppleWatch" class="services__apple-img">
+                <div class="services__item">
+                    <div class="services__logo-header-wrapper">
+                        <div class="services__logo-wrapper">
+                            <img src="./assets/images/services/iconfinder_20_2959850.svg" alt="Services" class="services__logo">
+                        </div>
+                        <h3 class="services__item-header">Комплексний щоденний юридичний супровід</h3>
+                    </div>
+                    <div class="services__item-description">До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</div>
                 </div>
-
-            </div>
             
-        </div>
-    </section>
-    <section class="Team">
-        <div class="container team__container">
-            <div class="team__text-wrapper">
-                <h2 class="team__header"><span class="accent-text">team </span>chinen & skills</h2>
-                <div class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, tenetur?</div>
-            </div>
-
-            <div class="team__items-wrapper">
-
-                <div class="team__item1">
-                    <div class="team__item-text-wrapper">
-                        <h5 class="team__item-header">bedi manos</h5>
-                        <div class="team__item-text">UI/UX Parena</div>
-                    </div>
-                </div>
-
-                <div class="team__item2">
-
-                    <div class="team__item2-progress-wrapper">
-                        <div class="team__item2-prorgress-text">UI/UX Design</div>
-                            <div class="progress">
-                                <div class="progress__bar1 progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <div class="team__item2-prorgress-text">English</div>
-                            <div class="progress">
-                                <div class="progress__bar2 progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <div class="team__item2-prorgress-text">Communication</div>
-                            <div class="progress">
-                                <div class="progress__bar3 progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                    </div>
-
-                    <div class="team__item2-text-wrapper">
-                        <h2 class="team__item2-header">al rayhan</h2>
-                        <div class="team__item2-text">UI/UX Designer</div>
-
-                        <div class="team__item2-logo-wrapper">
-                            <img src="./assets/images/twitterlogo.png" alt="twitter">
-                            <img src="./assets/images/facebooklogo.png" alt="facebook">
-                            <img src="./assets/images/twitterlogo.png" alt="twitter">
+                <div class="services__item">
+                    <div class="services__logo-header-wrapper">
+                        <div class="services__logo-wrapper">
+                            <img src="./assets/images/services/crowdfunding 1.svg" alt="Services" class="services__logo">
                         </div>
+                        <h3 class="services__item-header">Структуризація корпоративних відносин</h3>
                     </div>
-
+                    <div class="services__item-description">Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в повсякденне життя вашої компанії. </div>
                 </div>
+            
+                <div class="services__item">
+                    <div class="services__logo-header-wrapper">
+                        <div class="services__logo-wrapper">
+                            <img src="./assets/images/services/iconfinder_collaborative-combine-hand-together-team_3790070 1.svg" alt="Services" class="services__logo">
+                        </div>
+                        <h3 class="services__item-header">Побудовa договірних відносин</h3>
+                    </div>
+                    <div class="services__item-description">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.
 
-                <div class="team__item1">
-                    <div class="team__item-text-wrapper">
-                        <h5 class="team__item-header">ali sayed</h5>
-                        <div class="team__item-text">UI/UX Designer</div>
                     </div>
                 </div>
-
+            
+                <div class="services__item">
+                    <div class="services__logo-header-wrapper">
+                        <div class="services__logo-wrapper">
+                            <img src="./assets/images/services/iconfinder_safety__security__shield__protection_2542039.svg" alt="Services" class="services__logo">
+                        </div>
+                        <h3 class="services__item-header">Захист бізнесу, інтелектуальної власності</h3>
+                    </div>
+                    <div class="services__item-description">А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners замість корпоративного юриста.</div>
+                </div>
+            
+                <div class="services__item">
+                    <div class="services__logo-header-wrapper">
+                        <div class="services__logo-wrapper">
+                            <img src="./assets/images/services/iconfinder_Lawyer1_2315987 1.svg" alt="Services" class="services__logo">
+                        </div>
+                        <h3 class="services__item-header">Судове представництво</h3>
+                    </div>
+                    <div class="services__item-description">Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?</div>
+                </div>
             </div>
-
         </div>
-
     </section>
-    <section class="slider">
-        <div class="container slider__container">
-            <div class="slider__text-container">
-                <h2 class="slider__header"><span class="text-accent">clients </span>Said</h2>
-                <div class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque debitis quo obcaecati at.</div>
-            </div>
-
+    <section class="personal-slider">
+        <div class="container personal-slider__container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators personal-slider__indicators-wrapper">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://placeimg.com/1080/500/animals" class="d-block w-100" alt="First Slide">
+                <div class="personal-slider__inner carousel-inner">
+                  <div class="personal-slider__item carousel-item active">
+                    <img src="./assets/images/team/Photo (2).png" class="personal-slider__img d-block" alt="Person">
+                    <div class="personal-slider__header-wrapper">
+                        <a href="./assets/pages/team.html" class="personal-slider__link">команда</a>
+                        <h2 class="personal-slider__header">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                    </div>
+                    <div class="personal-slider__text-wrapper">
+                        <div class="personal-slider__text personal-slider__name">Олександр Олександровський</div>
+                        <div class="personal-slider__text ">Керуючий партнер</div>
+                    </div>
+                    
                   </div>
-                  <div class="carousel-item">
-                    <img src="https://placeimg.com/1080/500/arch" class="d-block w-100" alt="Second Slide">
+                  <div class="personal-slider__item  carousel-item">
+                    <img src="./assets/images/team/Photo (3).png" class="personal-slider__img d-block" alt="Person">
+                    <div class="personal-slider__header-wrapper">
+                        <a href="./assets/pages/team.html" class="personal-slider__link">команда</a>
+                        <h2 class="personal-slider__header">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                    </div>
+                    <div class="personal-slider__text-wrapper">
+                        <div class="personal-slider__text personal-slider__name">Олександр Олександровський</div>
+                        <div class="personal-slider__text ">Керуючий партнер</div>
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="https://placeimg.com/1080/500/nature" class="d-block w-100" alt="Third Slide">
+                  <div class=" personal-slider__item carousel-item">
+                    <img src="./assets/images/team/Photo (4).png" class="personal-slider__img d-block" alt="Person">
+                    <div class="personal-slider__header-wrapper">
+                        <a href="./assets/pages/team.html" class="personal-slider__link">команда</a>
+                        <h2 class="personal-slider__header">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                    </div>
+                    <div class="personal-slider__text-wrapper">
+                        <div class="personal-slider__text personal-slider__name">Олександр Олександровський</div>
+                        <div class="personal-slider__text ">Керуючий партнер</div>
+                    </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon carousel__buttons" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next corusel__buttons" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon carousel__buttons" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+               
               </div>
-
-        </div>
-    </section>
-    <section class="logo">
-        <div class="container logo__container">
-
-            <div class="logo__img-wrapper">
-                <img src="./assets/images/partner4.png" alt="LinkedIn" class="logo__img">
-            </div>
-
-            <div class="logo__img-wrapper">
-                <img src="./assets/images/partner1.png" alt="Dribbble" class="logo__img">
-            </div>
-
-            <div class="logo__img-wrapper">
-                <img src="./assets/images/partner2.png" alt="Envato" class="logo__img">
-            </div>
-
-            <div class="logo__img-wrapper">
-                <img src="./assets/images/partner4.png" alt="LinkedIn" class="logo__img">
-            </div>
-
-            <div class="logo__img-wrapper">
-                <img src="./assets/images/partner1.png" alt="Dribbble" class="logo__img">
-            </div>
-
-            <div class="logo__img-wrapper">
-                <img src="./assets/images/partner2.png" alt="Envato" class="logo__img">
-            </div>
-
         </div>
     </section>
 
+    <section class="cases">
+        <div class="container cases__container">
+            <div class="cases__wrapper">
+                <div class="cases__items-wrapper">
+                    <div class="cases__first-item-wrapper">
+                        <div class="cases__header-wrapper bg-grey">
+                            <h2 class="cases__header">Успішні кейси</h2>
+                        </div>
+                        <div class="cases__item bg-grey">
+                                <span class="cases__description">Супровід проекту з купівлі-продажу сільськогосподарської продукції</span>
+                                <span class="cases__partner">Hillel IT School</span>
+                        </div>
+                    </div>
+                    <div class="cases__description-item ds-1 " >1Prolegals у співпраці з юристами Clyde & Co виступила юридичним консультантом відомого іноземного банку у зв'язку з фінансуванням ряду угод з купівлі-продажу сільськогосподарської продукції. Юристи компанії, серед іншого, надали банку комплексне юридичний висновок про механізм роботи застав в Україні, способи звернення стягнення на товар і пов'язаних із заставою ризиками.</div>
+
+
+                    <div class="cases__item bg-grey">
+                        <span class="cases__description">Підготовка комплексного юридичного висновку для європейського банку</span>
+                        <span class="cases__partner">WannaBiz</span>
+                    </div>
+                    <div class="cases__description-item ds-2 " >2Prolegals у співпраці з юристами Clyde & Co виступила юридичним консультантом відомого іноземного банку у зв'язку з фінансуванням ряду угод з купівлі-продажу сільськогосподарської продукції. Юристи компанії, серед іншого, надали банку комплексне юридичний висновок про механізм роботи застав в Україні, способи звернення стягнення на товар і пов'язаних із заставою ризиками.</div>
+
+
+                    <div class="cases__item bg-grey">
+                        <span class="cases__description">Супровід проекту з купівлі-продажу сільськогосподарської продукції</span>
+                        <span class="cases__partner">tapgerine</span>
+                    </div>
+                    <div class="cases__description-item ds-3 " >3Prolegals у співпраці з юристами Clyde & Co виступила юридичним консультантом відомого іноземного банку у зв'язку з фінансуванням ряду угод з купівлі-продажу сільськогосподарської продукції. Юристи компанії, серед іншого, надали банку комплексне юридичний висновок про механізм роботи застав в Україні, способи звернення стягнення на товар і пов'язаних із заставою ризиками.</div>
+
+
+                    
+                </div>
+                       
+               
+                <div class="cases__items-wrapper ">
+                    <div class="cases__item cases__item2 bg-grey">
+                        <span class="cases__description">Представництво інтересів великого зернотрейдера в податковому спорі</span>
+                        <span class="cases__partner">3D LOOK</span>
+                    </div>
+                    <div class="cases__description-item ds-4 ">4Prolegals у співпраці з юристами Clyde & Co виступила юридичним консультантом відомого іноземного банку у зв'язку з фінансуванням ряду угод з купівлі-продажу сільськогосподарської продукції. Юристи компанії, серед іншого, надали банку комплексне юридичний висновок про механізм роботи застав в Україні, способи звернення стягнення на товар і пов'язаних із заставою ризиками.</div>
+
+                    <div class="cases__item cases__item2 bg-grey">
+                        <span class="cases__description">Оскарження податкових повідомлень-рішень ДФС</span>
+                        <span class="cases__partner">adtelligent</span>
+                    </div>
+                    <div class="cases__description-item ds-5 ">5Prolegals у співпраці з юристами Clyde & Co виступила юридичним консультантом відомого іноземного банку у зв'язку з фінансуванням ряду угод з купівлі-продажу сільськогосподарської продукції. Юристи компанії, серед іншого, надали банку комплексне юридичний висновок про механізм роботи застав в Україні, способи звернення стягнення на товар і пов'язаних із заставою ризиками.</div>
+
+                    <div class="cases__item  cases__item2 bg-grey">
+                        <span class="cases__description">Супровід проекту з кредитування агротрейдерів мальтійським банком</span>
+                        <span class="cases__partner">Clikky</span>
+                    </div>
+                    <div class="cases__description-item ds-6" >6Prolegals у співпраці з юристами Clyde & Co виступила юридичним консультантом відомого іноземного банку у зв'язку з фінансуванням ряду угод з купівлі-продажу сільськогосподарської продукції. Юристи компанії, серед іншого, надали банку комплексне юридичний висновок про механізм роботи застав в Україні, способи звернення стягнення на товар і пов'язаних із заставою ризиками.</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="partners__container">
+            <h2 class="partners__header">Вже довіряють нам</h2>
+
+            <div class="partners__logo-wrapper">
+
+                <div class="partners__logo partner-hilel">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/Hillel-Logo-OneLine-White-Uk.svg" alt="Hilel">
+                </div>
+
+                <div class="partners__logo partner-wannabiz">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/image(1).svg" alt="WannaBiz">
+                </div>
+
+                <div class="partners__logo partner-tapgerine">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/logo.svg" alt="TapGerine">
+                </div>
+
+                <div class="partners__logo partner-3dlook">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/retina_2.svg" alt="3D Look">
+                </div>
+
+                <div class="partners__logo partner-orangear">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/Frame.svg" alt="Orangear">
+                </div>
+
+                <div class="partners__logo partner-adtelligent">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/addtell.svg" alt="Adtelligent">
+                </div>
+
+                <div class="partners__logo partner-clickky">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/logo(1).svg" alt="Clickky">
+                </div>
+
+                <div class="partners__logo partner-ecolising">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/ecolease.svg" alt="Eco Lising">
+                </div>
+
+                <div class="partners__logo partner-infratek">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/image(2).svg" alt="InfraTek">
+                </div>
+
+                <div class="partners__logo partner-citypark">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/icon-logo.svg" alt="City-Park">
+                </div>
+
+                <div class="partners__logo partner-artprint">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/logo(2).svg" alt="Art-Print studio">
+                </div>
+
+                <div class="partners__logo partner-ultimate">
+                    <img class="partners__logo-img" src="./assets/images/partnersLogo/logoM.svg" alt="Ultimade Card">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="publications">
+        <div class="container publications__container">
+            <a href="./assets/pages/publications-page.html" class="publications__link">Публікації</a>
+            <h2 class="publications__header">Нам э що розказати</h2>
+
+            <div class="publications__items-box">
+
+                <div class="publications__item">
+
+                    <div class="publications__text-wrapper">
+                        <a href="./assets/pages/publications-card.html" class="publications__item-header-wrapper">
+                            <h3 class="publications__item-header">Валютний контроль помер, хай живе валютний контроль!</h3>
+                        </a>
+                        <div class="publications__date">14 червня</div>
+                        <div class="publications__item-description">Експерти проводять конференції, круглі столи та іншого штибу заходи на тему «лібералізація валютного законодавства».</div>
+                    </div>
+
+                </div>
+
+                <div class="publications__item">
+
+                    <div class="publications__img-wrapper">
+                        <img src="./assets/images/publications/image(1).svg" alt="Our Blog" class="publications__img">
+                    </div>
+
+                    <div class="publications__text-wrapper">
+                        <a href="./assets/pages/publications-card.html" class="publications__item-header-wrapper">
+                            <h3 class="publications__item-header">Equity associate</h3>
+                        </a>
+                        <div class="publications__date">22 квітня</div>
+                        <div class="publications__item-description">На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…</div>
+                    </div>
+
+                </div>
+
+                <div class="publications__item">
+
+                    <div class="publications__img-wrapper">
+                        <img src="./assets/images/publications/image(2).svg" alt="Our Blog" class="publications__img">
+                    </div>
+
+                    <div class="publications__text-wrapper">
+                        <a href="./assets/pages/publications-card.html" class="publications__item-header-wrapper">
+                            <h3 class="publications__item-header">Штраф для «Корпорації добра»: що буде з Google та іншими за порушення GDPR</h3>
+                        </a>
+                        <div class="publications__date">29 вересня</div>
+                        <div class="publications__item-description">І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами Mind.ua 21 січня Національна комісія із захисту даних.</div>
+                    </div>
+
+                </div>
+
+                <div class="publications__item">
+
+                    <div class="publications__img-wrapper">
+                        <img src="./assets/images/publications/image(3).svg" alt="Our Blog" class="publications__img">
+                    </div>
+                   
+                    <div class="publications__text-wrapper">
+                        <a href="./assets/pages/publications-card.html" class="publications__item-header-wrapper">
+                            <h3 class="publications__item-header">Заповіт міленіала</h3>
+                        </a>
+                        <div class="publications__date">19 серпня</div>
+                        <div class="publications__item-description">Що і як передаватимуть у спадщину сучасні влогери, опініон лідери і криптомільйонери Типовий спадок українського покоління Х виглядає так: квартира у…</div>
+                   
+                    </div>
+                
+                </div>
+
+
+                <div class="publications__item">
+                    
+                    <div class="publications__img-wrapper">
+                        <img src="./assets/images/publications/image(4).svg" alt="Our Blog" class="publications__img">
+                    </div>
+                    
+                    <div class="publications__text-wrapper">
+                        
+                        <a href="./assets/pages/publications-card.html" class="publications__item-header-wrapper">
+                            <h3 class="publications__item-header">Закон про мови: як зробити свій сайт відповідним</h3>
+                        </a>
+                        
+                        <div class="publications__date">19 серпня</div>
+                        <div class="publications__item-description">Наталія Кирик, керівник контент студії Wordfactory.ua По-перше, це красиво! Це аргумент номер один на користь україномовного сайту. По-друге, це ефективно. У…</div>
+
+                    </div> 
+
+                </div>
+
+                <div class="publications__item">
+                    <div class="publications__img-wrapper">
+                        <img src="./assets/images/publications/image(5).svg" alt="Our Blog" class="publications__img">
+                    </div>
+
+                    <div class="publications__text-wrapper">
+                        <a href="./assets/pages/publications-card.html" class="publications__item-header-wrapper">
+                            <h3 class="publications__item-header">Компенсація витрат на навчання дитини в дитячому садку та школі</h3>
+                        </a>
+                        <div class="publications__date">5 Лютого 2018</div>
+                        <div class="publications__item-description">Про що йде мова В червні цього року Верховна Рада внесла зміни до Податкового кодексу України. Відтепер батьки, які отримують офіційну…</div>
+                
+                   </div>
+
+                </div>
+
+                <div class="publications__button-wrapper">
+                    <button class="publications__button">Ще публікації</button>
+                </div>
+
+            </div>
+            
+           
+        </div>
+    </section>
+   
+    
     <footer class="footer">
         <div class="container footer__container">
-            <button type="button" class="mx-2 btn btn-primary footer__button" data-bs-toggle="button" autocomplete="off">contact us</button>
+            <div class="footer__info-wrapper">
             
-            
-            <div class="footer__items-wrapper">
-                <div class="footer__item">
-                    <img src="./assets/images/facebook.png" alt="Faceebook">
-                </div>
-                <div class="footer__item">
-                    <img src="./assets/images/twitter.png" alt="Twitter">
-                </div>
-                <div class="footer__item">
-                    <img src="./assets/images/internet.png" alt="Internet">
-                </div>
-                <div class="footer__item">
-                    <img src="./assets/images/bs.png" alt="BE">
+                <div class="footer__adress-wrapper">
+                    <div class="footer__adress">Одеса, Адміральський пр., 3</div>
+                    <a href="./assets/pages/contacts.html" class="footer__map-link footer__link__hover  footer__map-link__hover">Подивитися на мапі</a>
                 </div>
 
-                <div class="footer__text">© 2015 - 2016 Deviserweb Ltd.</div>
+                <div class="footer__contacts-wrapper">
+
+                    <a href="#" class="footer__fb-link">
+                        <svg class="footer__fb-img" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="footer__fb-img" d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
+                            </svg>
+    
+                    </a>
+                    <div class="footer__telephone-number">	+38 (050) 390 15 91</div>
+                    <a href="#" class="footer__link footer__contact-link footer__link__hover">contact@hlegals.net</a>
+
+                </div>
+
             </div>
-
+            <div class="footer__trademark">© 2021 ТОВ Юридична компанія «HLEGALS»</div>
         </div>
     </footer>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </html>

@@ -1,34 +1,79 @@
+@import "../components/settings.scss";
 @import "../components/variables.scss";
 @import "../components/mixin.scss";
 @import "../components/blocks/header.scss";
 @import "../components/blocks/first-screen.scss";
 @import "../components/blocks/footer.scss";
-@import "../components/blocks/working.scss";
-@import "../components/blocks/slider.scss";
-@import "../components/blocks/feat-works.scss";
-@import "../components/blocks/logo.scss";
-@import "../components/blocks/services.scss";
+@import "../components/blocks/partners.scss";
+@import "../components/blocks/contacts-page.scss";
+@import "../components/blocks/personal-slider.scss";
 @import "../components/blocks/team.scss";
+@import "../components/blocks/about.scss";
+@import "../components/blocks/staff-photo.scss";
+@import "../components/blocks/oth-about.scss";
+@import "../components/blocks/services.scss";
+@import "../components/blocks/cases.scss";
+@import "../components/blocks/team-card.scss";
+@import "../components/blocks/publications.scss";
+@import "../components/blocks/publications-card.scss";
+@import "../components/blocks/publications-page.scss";
+@import "../components/blocks/services-page.scss";
+@import "../components/blocks/experience.scss";
+@import "../components/burgerMobileMenu.scss";
+@import "../components/base.scss";
 
 
-.body{
-    font-family: 'Open Sans', sans-serif;
-}
-.text-accent{
-    color:$color-accent;
-}
+
+
+// *, html, body{
+//     font-family: 'TT Norms', sans-serif!important;
+//     box-sizing:border-box!important;
+// }
+
+
+
 .container{
     margin:0 auto;
-    max-width:1160px;
-    padding-right:15px;
-    padding-left:15px;
+    max-width:1440px;
+    width:100%;
+    padding-right:60px;
+    padding-left:60px;
+    box-sizing:border-box;
+    @media (max-width:$mid-max){
+        padding-right:20px;
+        padding-left:20px;
+    }
 }
-.section-description{
-    color:$color-text-grey;
-    max-width:630px;
-    margin-top:1.5em;
-    font-size:16px;
-    line-height:1.2;
+@font-face {
+    font-family: 'TT Norms';
+    src: local('TT Norms Bold'), local('TT-Norms-Bold'),
+        url('../fonts/TTNorms-Bold.woff2') format('woff2'),
+        url('../fonts/TTNorms-Bold.woff') format('woff'),
+        url('../fonts/TTNorms-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TT Norms';
+    src: local('TT Norms Medium'), local('TT-Norms-Medium'),
+        url('../fonts/TTNorms-Medium.woff2') format('woff2'),
+        url('../fonts/TTNorms-Medium.woff') format('woff'),
+        url('../fonts/TTNorms-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TT Norms';
+    src: local('TT Norms Regular'), local('TT-Norms-Regular'),
+        url('../fonts/TTNorms-Regular.woff2') format('woff2'),
+        url('../fonts/TTNorms-Regular.woff') format('woff'),
+        url('../fonts/TTNorms-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
+.fd-column{
+    display:flex;
+    flex-direction: column;
 }
 

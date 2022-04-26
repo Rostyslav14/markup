@@ -1,9 +1,20 @@
 .first-screen{
-    background-color:$sectionbg-grey;
+
+    background:linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    position:relative;
+
 
     &__container{
-     padding-top:280px;
+        padding-top:125px;
         text-align: center;
+        background: url(../images/fs-bg.png) no-repeat bottom,url(../images/fs-logo.png) no-repeat bottom ;
+        min-height:685px;
+        background-size:auto;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+
     }
 
     &__text-wrapper{
@@ -11,14 +22,34 @@
     }
 
     &__header{
-        color:$color-text-grey;
-        font-size:50px;
+        font-size:38px;
         line-height:1.2;
-        text-transform:capitalize;
+        color:$color-basic;
+        max-width:540px;
     }
 
+    &__scroll-wrapper{
+        background-image: linear-gradient(180deg, rgba(50,50,100,0) 16.67%, #323264 100%);
+        position:absolute;
+        left:0;
+        bottom:0;
+        width:100vw;
+        min-height:200px;
+    }
+    &__scroll{
+        background-image: url(../images/ScrollDown.svg);
+        background-size:auto;
+        background-repeat:no-repeat;
+        background-position:bottom center;
+        min-height:200px;
+        width:100vw;
+           
+
+    }
+
+
     
-}
+
 .contact-form__wrapper{
     padding:20px 40px;
     background:#fff;
@@ -64,4 +95,4 @@
         
     
 }
-
+}

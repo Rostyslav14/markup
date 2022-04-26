@@ -1,0 +1,22 @@
+@font-face{
+    font-family:TtNorms;
+    src:url('../fonts/TTNorms-Regular.otf');
+}
+body{
+    font-family:TtNorms;
+}
+
+.text-grey{
+    color:$text-grey;
+}
+.text-blue{
+    color:$color-active;
+}
+.color-white{
+    background-color:white;
+    color:white;
+}
+.bg-grey{
+    background-color:$bg-grey;
+
+}
